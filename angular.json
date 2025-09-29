@@ -37,8 +37,7 @@
             ],
             "scripts": [],
             "allowedCommonJsDependencies": [
-              "@jd/xiot-core-xcp-ts",
-              "@jd/xiot-core-spec-ts"
+              "xiot-core-spec-ts"
             ]
           },
           "configurations": {
