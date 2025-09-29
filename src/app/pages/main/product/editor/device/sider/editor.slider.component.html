@@ -1,0 +1,17 @@
+@if (device) {
+  <nz-layout class="inner-layout">
+    <nz-sider nzWidth="360px" nzTheme="light">
+      <editor-service-group [version]="version" [device]="device" [language]="language" (selected)="onServiceSelected($event)"></editor-service-group>
+    </nz-sider>
+
+    <nz-content class="inner-content">
+      @if (service) {
+        @if (expert) {
+          <editor-service-waterfall [version]="version" [service]="service" [language]="language" (changed)="onChanged($event)" (removed)="onRemoved($event)"></editor-service-waterfall>
+        } @else {
+          <editor-service-split [version]="version" [service]="service" [language]="language" (changed)="onChanged($event)" (removed)="onRemoved($event)"></editor-service-split>
+        }
+      }
+    </nz-content>
+  </nz-layout>
+}

@@ -1,0 +1,9 @@
+<nz-card
+  nzSize="small"
+  nzTitle="厂家"
+>
+  <nz-tag nzMode="checkable" [(nzChecked)]="all.checked" (nzCheckedChange)="onAllChecked(all, $event)">{{ all.name }}</nz-tag>
+  @for (vendor of vendors; track vendor.code) {
+    <nz-tag nzMode="checkable" [(nzChecked)]="vendor.checked" (nzCheckedChange)="onVendorChecked(vendor, $event)">{{vendor.name}}</nz-tag>
+  }
+</nz-card>

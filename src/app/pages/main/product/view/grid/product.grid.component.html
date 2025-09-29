@@ -1,0 +1,18 @@
+<div nz-row [nzGutter]="[8, 8]">
+  @for (p of products; track p.id) {
+    <div nz-col [nzSpan]="6">
+      <nz-card
+        nzSize="small"
+        [nzTitle]="p.name"
+        [nzExtra]="p.vendor"
+        [nzActions]="[productExtra]"
+      >
+        {{ p.model }}
+      </nz-card>
+
+      <ng-template #productExtra>
+        <a routerLink="/main/product/editor/{{p.type.toString()}}">编辑</a>
+      </ng-template>
+    </div>
+  }
+</div>

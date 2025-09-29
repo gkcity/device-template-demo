@@ -1,0 +1,31 @@
+<nz-table
+  #table
+  nzSize="small"
+  nzHideOnSinglePage
+  nzShowSizeChanger
+  [nzPageSize]="100"
+  [nzData]="products"
+>
+  <thead>
+    <tr>
+      <th>产品名称</th>
+      <th>厂家</th>
+      <th>型号</th>
+      <th>版本</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (p of table.data; track p.id) {
+      <tr>
+        <td>{{ p.name }}</td>
+        <td>{{ p.vendor }}</td>
+        <td>{{ p.model }}</td>
+        <td>{{ p.version }}</td>
+        <td>
+          <a routerLink="/main/product/editor/{{p.type.toString()}}">编辑</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</nz-table>

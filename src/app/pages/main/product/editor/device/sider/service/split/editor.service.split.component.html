@@ -1,0 +1,52 @@
+@if (service) {
+  <nz-layout class="inner-layout">
+    <nz-sider nzWidth="360px" nzTheme="light">
+      <editor-service-menu
+        [version]="version"
+        [service]="service"
+        [language]="language"
+        (titleSelected)="onTitleSelected($event)"
+        (propertySelected)="onPropertySelected($event)"
+        (actionSelected)="onActionSelected($event)"
+        (eventSelected)="onEventSelected($event)"
+      ></editor-service-menu>
+    </nz-sider>
+
+    <nz-content class="inner-content">
+      @if (showServiceDetail) {
+        <editor-service-detail
+          [service]="service"
+          [language]="language"
+          (removed)="onServiceRemoved($event)"
+        ></editor-service-detail>
+      }
+
+      @if (property) {
+        <editor-service-property
+          [service]="service"
+          [property]="property"
+          [language]="language"
+          (removed)="onPropertyRemoved($event)"
+        ></editor-service-property>
+      }
+
+      @if (action) {
+        <editor-service-action
+          [service]="service"
+          [action]="action"
+          [language]="language"
+          (removed)="onActionRemoved($event)"
+        ></editor-service-action>
+      }
+
+      @if (event) {
+        <editor-service-event
+          [service]="service"
+          [event]="event"
+          [language]="language"
+          (removed)="onEventRemoved($event)"
+        ></editor-service-event>
+      }
+    </nz-content>
+  </nz-layout>
+}
