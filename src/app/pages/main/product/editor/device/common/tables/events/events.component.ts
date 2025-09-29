@@ -1,5 +1,5 @@
 import {Component, Input, ViewContainerRef} from '@angular/core';
-import {Property, Service, Event} from '@jd/xiot-core-spec-ts';
+import {Property, Service, Event} from 'xiot-core-spec-ts';
 import {NzTableComponent, NzTableModule} from "ng-zorro-antd/table";
 import {NzTagModule} from 'ng-zorro-antd/tag';
 import {NzTooltipDirective} from 'ng-zorro-antd/tooltip';

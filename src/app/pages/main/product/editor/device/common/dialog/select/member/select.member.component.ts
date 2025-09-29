@@ -9,7 +9,7 @@ import {NzCheckboxModule} from 'ng-zorro-antd/checkbox';
 import {NzTagModule} from 'ng-zorro-antd/tag';
 import {NzCellAlignDirective, NzTableModule} from 'ng-zorro-antd/table';
 import {PropertyMemberComponent} from '../../../tables/properties/member/property-member.component';
-import {Property} from '@jd/xiot-core-spec-ts';
+import {Property} from 'xiot-core-spec-ts';
 
 @Component({
   selector: 'select-member',

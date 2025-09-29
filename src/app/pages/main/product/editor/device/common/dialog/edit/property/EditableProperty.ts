@@ -1,4 +1,4 @@
-import {Property, Service} from '@jd/xiot-core-spec-ts';
+import {Property, Service} from 'xiot-core-spec-ts';
 
 export class EditableProperty {
 

@@ -1,4 +1,4 @@
-import {Service, Argument} from '@jd/xiot-core-spec-ts';
+import {Service, Argument} from 'xiot-core-spec-ts';
 
 export class SelectArgument {
 

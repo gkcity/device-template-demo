@@ -14,7 +14,7 @@ import {ProductFilterTypeComponent} from './filter/type/product.filter.type.comp
 import {ProductFilterVendorComponent} from './filter/vendor/product.filter.vendor.component';
 import {Type} from '../../../typedef/define/Type';
 import {Vendor} from '../../../typedef/define/Vendor';
-import {Urn} from '@jd/xiot-core-spec-ts';
+import {Urn} from 'xiot-core-spec-ts';
 
 @Component({
   selector: 'main-product',

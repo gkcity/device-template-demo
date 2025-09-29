@@ -16,11 +16,11 @@ export class ProductService {
   }
 
   /**
-   * 读取产品列表
+   * 读取产品模板
    */
   getProducts(): Observable<ProductInfo[]> {
     return this.http
-      .get<HomeResponse>(`${this.server}/product/all`)
+      .get<HomeResponse>(`/templates.json`)
       .pipe(map(response => ProductInfoCodec.decodeArray(response.data)));
   }
 
@@ -32,7 +32,7 @@ export class ProductService {
       type: type
     }
     return this.http
-      .get<HomeResponse>(`${this.server}/product/instance`, {params})
+      .get<HomeResponse>(`/template.json`, {params})
       .pipe(map(response => response.data));
   }
 }

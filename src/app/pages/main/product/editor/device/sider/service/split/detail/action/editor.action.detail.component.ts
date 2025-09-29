@@ -21,7 +21,7 @@ import {
   ReactiveFormsModule,
   Validators
 } from '@angular/forms';
-import {Action, Argument, Property, Service} from '@jd/xiot-core-spec-ts';
+import {Action, Argument, Property, Service} from 'xiot-core-spec-ts';
 import {NzFormModule} from 'ng-zorro-antd/form';
 import {NzInputModule} from 'ng-zorro-antd/input';
 import {NzInputNumberModule} from 'ng-zorro-antd/input-number';

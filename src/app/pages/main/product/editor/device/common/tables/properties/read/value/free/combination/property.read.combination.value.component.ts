@@ -1,6 +1,6 @@
 import {Component, forwardRef, Input} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {Property, Service} from '@jd/xiot-core-spec-ts';
+import {Property, Service} from 'xiot-core-spec-ts';
 import {NzSwitchModule} from 'ng-zorro-antd/switch';
 import {NzDescriptionsModule} from 'ng-zorro-antd/descriptions';
 import {PropertyReadValueComponent} from '../../property.read.value.component';

@@ -3,7 +3,7 @@ import {NzButtonModule} from 'ng-zorro-antd/button';
 import {NZ_MODAL_DATA, NzModalRef} from 'ng-zorro-antd/modal';
 import {NzFormModule} from 'ng-zorro-antd/form';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {PropertyOperation} from '@jd/xiot-core-spec-ts';
+import {PropertyOperation} from 'xiot-core-spec-ts';
 import {NzDividerModule} from 'ng-zorro-antd/divider';
 import {NzBadgeModule} from 'ng-zorro-antd/badge';
 import {NzDescriptionsModule} from 'ng-zorro-antd/descriptions';

@@ -1,4 +1,4 @@
-import {Service} from '@jd/xiot-core-spec-ts';
+import {Service} from 'xiot-core-spec-ts';
 
 export class EditableService {
 

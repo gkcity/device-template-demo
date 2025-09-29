@@ -1,4 +1,4 @@
-import {Service, Property} from '@jd/xiot-core-spec-ts';
+import {Service, Property} from 'xiot-core-spec-ts';
 
 export interface IPropertyData {
   did: string;

@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Property} from '@jd/xiot-core-spec-ts';
+import {Property} from 'xiot-core-spec-ts';
 import {NzInputDirective} from 'ng-zorro-antd/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 

@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output, ViewContainerRef} from '@angular/core';
-import {DataFormat, Property, Service} from '@jd/xiot-core-spec-ts';
+import {DataFormat, Property, Service} from 'xiot-core-spec-ts';
 import {NzMessageService} from 'ng-zorro-antd/message';
 import {NzTableComponent, NzTableModule} from "ng-zorro-antd/table";
 import {NzTagModule} from 'ng-zorro-antd/tag';

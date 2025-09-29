@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NzInputNumberModule} from 'ng-zorro-antd/input-number';
-import {Property} from '@jd/xiot-core-spec-ts';
+import {Property} from 'xiot-core-spec-ts';
 
 @Component({
   selector: 'property-write-uint16-value',

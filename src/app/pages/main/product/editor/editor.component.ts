@@ -3,7 +3,7 @@ import {
   DeviceInstanceCodec,
   UrnType,
   Service,
-} from "@jd/xiot-core-spec-ts";
+} from "xiot-core-spec-ts";
 import {NzMessageService} from "ng-zorro-antd/message";
 import {ActivatedRoute} from "@angular/router";
 import {NzBreadCrumbComponent} from 'ng-zorro-antd/breadcrumb';
@@ -15,12 +15,10 @@ import {
 import {NzDescriptionsComponent, NzDescriptionsItemComponent} from 'ng-zorro-antd/descriptions';
 import {NzMenuModule} from 'ng-zorro-antd/menu';
 import {NzLayoutModule} from 'ng-zorro-antd/layout';
-import {EditorWaterfallComponent} from './device/waterfall/editor.waterfall.component';
 import {EditorSliderComponent} from './device/sider/editor.slider.component';
 import {FormsModule} from '@angular/forms';
 import {NzSegmentedModule} from 'ng-zorro-antd/segmented';
-import {EditorTabsComponent} from './device/tabs/editor.tabs.component';
-import {DeviceInstance} from '@jd/xiot-core-spec-ts/dist/xiot/core/spec/typedef/instance/DeviceInstance';
+import {DeviceInstance} from 'xiot-core-spec-ts/dist/xiot/core/spec/typedef/instance/DeviceInstance';
 import {NzSpinComponent} from 'ng-zorro-antd/spin';
 import {NzTagModule} from 'ng-zorro-antd/tag';
 import {ProductService} from '../../../../service/ProductService';
@@ -45,9 +43,7 @@ import {NzSwitchModule} from 'ng-zorro-antd/switch';
     NzMenuModule,
     NzLayoutModule,
     NzSegmentedModule,
-    EditorWaterfallComponent,
     EditorSliderComponent,
-    EditorTabsComponent,
     NzSpinComponent,
     NzTagModule,
     NzRadioModule,
@@ -70,14 +66,6 @@ export class EditorComponent implements OnInit, OnDestroy{
 
   // 专家模式
   expert: boolean = false;
-
-  // 设备展现风格
-  deviceDisplayOptions = ['分栏', '瀑布', '标签页'];
-  deviceDisplayStyle: number = 0;
-
-  // 服务展现风格（设备展现风格为'分栏'时有效）
-  serviceDisplayOptions = ['标签页', '瀑布'];
-  serviceDisplayStyle: number = 1;
 
   loading: boolean = true;
   type: string = '';

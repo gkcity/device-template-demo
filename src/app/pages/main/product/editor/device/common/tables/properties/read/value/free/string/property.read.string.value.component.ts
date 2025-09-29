@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Property} from '@jd/xiot-core-spec-ts';
+import {Property} from 'xiot-core-spec-ts';
 import { NzSpaceModule} from 'ng-zorro-antd/space';
 
 @Component({

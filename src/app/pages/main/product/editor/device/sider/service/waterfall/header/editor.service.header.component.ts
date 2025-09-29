@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output, ViewContainerRef} from '@angular/core';
-import {Service} from '@jd/xiot-core-spec-ts';
+import {Service} from 'xiot-core-spec-ts';
 import {NzMessageService} from 'ng-zorro-antd/message';
 import {NzTabsModule} from 'ng-zorro-antd/tabs';
 import {NzCardModule} from 'ng-zorro-antd/card';

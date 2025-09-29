@@ -23,7 +23,7 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10",
-    "@jd/xiot-core-xcp-ts": "^1.2.9"
+    "xiot-core-spec-ts": "^3.8.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.20",

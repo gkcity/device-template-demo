@@ -1,4 +1,4 @@
-import {Property} from '@jd/xiot-core-spec-ts';
+import {Property} from 'xiot-core-spec-ts';
 
 export class Member {
   constructor(

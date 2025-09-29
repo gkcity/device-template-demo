@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
-import {DataFormat, Property, Service} from '@jd/xiot-core-spec-ts';
+import {DataFormat, Property, Service} from 'xiot-core-spec-ts';
 import {PropertyReadListValueComponent} from './constraint/list/property.read.list.value.component';
 import {PropertyReadRangeValueComponent} from './constraint/range/property-read-range-value.component';
 import {PropertyReadInt8ValueComponent} from './free/number/int8/property.read.int8.value.component';

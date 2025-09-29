@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output, ViewContainerRef} from '@angular/core';
-import {DeviceInstance, Service} from '@jd/xiot-core-spec-ts';
+import {DeviceInstance, Service} from 'xiot-core-spec-ts';
 import {NzButtonComponent} from 'ng-zorro-antd/button';
 import {NzTagComponent} from 'ng-zorro-antd/tag';
 import {NzMenuModule} from 'ng-zorro-antd/menu';

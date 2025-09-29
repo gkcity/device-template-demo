@@ -1,4 +1,4 @@
-import {Argument, Property} from '@jd/xiot-core-spec-ts';
+import {Argument, Property} from 'xiot-core-spec-ts';
 
 export class Arg {
   constructor(

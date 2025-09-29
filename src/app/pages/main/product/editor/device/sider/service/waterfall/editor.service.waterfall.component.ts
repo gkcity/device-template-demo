@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output, ViewContainerRef} from '@angular/core';
-import {Property, Service} from '@jd/xiot-core-spec-ts';
+import {Property, Service} from 'xiot-core-spec-ts';
 import {NzMessageService} from 'ng-zorro-antd/message';
 import {PropertiesControllerComponent} from '../../../common/tables/properties/properties.component';
 import {ActionsControllerComponent} from '../../../common/tables/actions/actions.component';

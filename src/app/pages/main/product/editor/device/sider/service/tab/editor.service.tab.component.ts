@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Service} from '@jd/xiot-core-spec-ts';
+import {Service} from 'xiot-core-spec-ts';
 import {PropertiesControllerComponent} from '../../../common/tables/properties/properties.component';
 import {ActionsControllerComponent} from '../../../common/tables/actions/actions.component';
 import {EventsControllerComponent} from '../../../common/tables/events/events.component';

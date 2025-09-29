@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {Property} from '@jd/xiot-core-spec-ts';
+import {Property} from 'xiot-core-spec-ts';
 import {NzOptionComponent, NzSelectComponent} from 'ng-zorro-antd/select';
 
 @Component({

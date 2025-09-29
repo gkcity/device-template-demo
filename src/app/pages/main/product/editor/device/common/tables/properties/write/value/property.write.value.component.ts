@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
-import {DataFormat, Property, Service} from '@jd/xiot-core-spec-ts';
+import {DataFormat, Property, Service} from 'xiot-core-spec-ts';
 import {PropertyWriteListValueComponent} from './constraint/list/property.write.list.value.component';
 import {PropertyWriteRangeValueComponent} from './constraint/range/property-write-range-value.component';
 import {PropertyWriteInt8ValueComponent} from './free/number/int8/property.write.int8.value.component';

@@ -3,7 +3,7 @@ import {NzMenuModule} from 'ng-zorro-antd/menu';
 import {NzLayoutModule} from 'ng-zorro-antd/layout';
 import {NzListModule} from 'ng-zorro-antd/list';
 import {EditorServiceWaterfallComponent} from './service/waterfall/editor.service.waterfall.component';
-import {DeviceInstance, Service} from '@jd/xiot-core-spec-ts';
+import {DeviceInstance, Service} from 'xiot-core-spec-ts';
 import {NzModalService} from 'ng-zorro-antd/modal';
 import {NzMessageService} from 'ng-zorro-antd/message';
 import {EditorServiceGroupComponent} from './group/editor.service.group.component';
@@ -32,7 +32,6 @@ export class EditorSliderComponent implements OnChanges {
   @Input() expert: boolean = false;
   @Input() device: DeviceInstance | undefined = undefined;
   @Input() language: string = 'zh-CN';
-  @Input() style: number = 0;
   @Output() changed = new EventEmitter<DeviceInstance>();
   @Output() removed = new EventEmitter<Service>();
 

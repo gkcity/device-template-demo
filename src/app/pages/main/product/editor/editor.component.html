@@ -17,30 +17,16 @@
           <label nz-radio-button nzValue="en-US">英文</label>
         </nz-radio-group>
       </nz-descriptions-item>
-      <nz-descriptions-item nzTitle="版本" [nzSpan]="1">
-        <nz-switch [(ngModel)]="version" nzCheckedChildren="显示" nzUnCheckedChildren="隐藏"></nz-switch>
-      </nz-descriptions-item>
-      <nz-descriptions-item nzTitle="浏览模式" [nzSpan]="1">
-        <nz-switch [(ngModel)]="expert" nzCheckedChildren="专家模式" nzUnCheckedChildren="普通模式"></nz-switch>
-      </nz-descriptions-item>
 
-      <!--      <nz-descriptions-item nzTitle="设备展现风格" [nzSpan]="1">-->
-<!--        <nz-segmented [nzSize]="'small'" [nzOptions]="deviceDisplayOptions" [(ngModel)]="deviceDisplayStyle"></nz-segmented>-->
+<!--      <nz-descriptions-item nzTitle="版本" [nzSpan]="1">-->
+<!--        <nz-switch [(ngModel)]="version" nzCheckedChildren="显示" nzUnCheckedChildren="隐藏"></nz-switch>-->
 <!--      </nz-descriptions-item>-->
-<!--      @if (deviceDisplayStyle === 0) {-->
-<!--        <nz-descriptions-item nzTitle="服务展示风格" [nzSpan]="1">-->
-<!--          <nz-segmented [nzSize]="'small'" [nzOptions]="serviceDisplayOptions" [(ngModel)]="serviceDisplayStyle"></nz-segmented>-->
-<!--        </nz-descriptions-item>-->
-<!--      }-->
+
+<!--      <nz-descriptions-item nzTitle="浏览模式" [nzSpan]="1">-->
+<!--        <nz-switch [(ngModel)]="expert" nzCheckedChildren="专家模式" nzUnCheckedChildren="普通模式"></nz-switch>-->
+<!--      </nz-descriptions-item>-->
     </nz-descriptions>
   </nz-page-header-content>
-
-<!--  <nz-page-header-extra>-->
-<!--    <nz-space>-->
-<!--      <button *nzSpaceItem nz-button nzType="dashed" [disabled]="!changed" (click)="onReload()">重新加载</button>-->
-<!--      <button *nzSpaceItem nz-button nzType="primary" nzDanger [disabled]="!changed">保存</button>-->
-<!--    </nz-space>-->
-<!--  </nz-page-header-extra>-->
 
   <ng-template #subTitle>
     @if (instance) {
@@ -54,17 +40,7 @@
 <div style="padding: 20px 20px">
   <nz-spin [nzSpinning]="loading">
     @if (instance) {
-      @switch (deviceDisplayStyle) {
-        @case (0) {
-          <editor-slider [version]="version" [expert]="expert" [device]="instance" [language]="language" [style]="serviceDisplayStyle" (changed)="onChanged($event)" (removed)="onRemove($event)"></editor-slider>
-        }
-        @case (1) {
-          <editor-waterfall [version]="version" [device]="instance" [language]="language" [style]="serviceDisplayStyle" (changed)="onChanged($event)"></editor-waterfall>
-        }
-        @case (2) {
-          <editor-tabs [version]="version" [device]="instance" [language]="language" [style]="serviceDisplayStyle" (changed)="onChanged($event)"></editor-tabs>
-        }
-      }
+      <editor-slider [version]="version" [expert]="expert" [device]="instance" [language]="language" (changed)="onChanged($event)" (removed)="onRemove($event)"></editor-slider>
     }
   </nz-spin>
 </div>

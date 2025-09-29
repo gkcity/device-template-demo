@@ -1,5 +1,5 @@
 import {ProductInfo} from '../define/ProductInfo';
-import {Urn, UrnType} from '@jd/xiot-core-spec-ts';
+import {Urn, UrnType} from 'xiot-core-spec-ts';
 
 export class ProductInfoCodec {
   static encode(x: ProductInfo): any {
@@ -25,12 +25,15 @@ export class ProductInfoCodec {
   }
 
   static decodeArray(arr: any[]): ProductInfo[] {
+    console.log('decodeArray: ', arr);
+
     const list: ProductInfo[] = [];
     if (arr != null) {
       for (const o of arr) {
         list.push(this.decode(o));
       }
     }
+
     return list;
   }
 

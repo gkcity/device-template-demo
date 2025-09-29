@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Property, Service} from '@jd/xiot-core-spec-ts';
+import {Property, Service} from 'xiot-core-spec-ts';
 import {FormsModule} from "@angular/forms";
 import {NzTagComponent} from 'ng-zorro-antd/tag';
 

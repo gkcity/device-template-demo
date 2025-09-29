@@ -1,4 +1,4 @@
-import {Action, Service} from '@jd/xiot-core-spec-ts';
+import {Action, Service} from 'xiot-core-spec-ts';
 
 export interface IActionData {
   did: string;

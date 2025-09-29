@@ -1,4 +1,4 @@
-import {Urn} from '@jd/xiot-core-spec-ts';
+import {Urn} from 'xiot-core-spec-ts';
 
 export class ProductInfo {
 
