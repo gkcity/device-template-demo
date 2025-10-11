@@ -124,8 +124,8 @@
             "iid": 4,
             "format": "int8",
             "description": {
-              "en-US": "Wi-Fi Signal Strength",
-              "zh-CN": "Wi-Fi信号强度"
+              "en-US": "Received Signal Strength Indication",
+              "zh-CN": "信号强度"
             },
             "value-range": [
               -128,
