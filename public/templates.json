@@ -2,11 +2,11 @@
   "success": true,
   "data": [
     {
-      "name": "lightbulb",
+      "name": "空调",
       "vendor": "jd",
-      "model": "lightbulb",
+      "model": "ac",
       "version": 1,
-      "type": "urn:jd-spec:device:lightbulb:0000012d:jd:m1:1",
+      "type": "urn:jd-spec:device:air-conditioner:0000012d:jd:m1:1",
       "id": "xxx"
     }
   ]

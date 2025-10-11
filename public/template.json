@@ -2,8 +2,8 @@
   "success": true,
   "data": {
     "description": {
-      "en-US": "device template",
-      "zh-CN": "产品模板"
+      "en-US": "air conditioner template",
+      "zh-CN": "空调模板"
     },
     "services": [
       {
@@ -555,6 +555,6 @@
         ]
       }
     ],
-    "type": "urn:jd-spec:device:lightbulb:0000012d:jd:m1:1"
+    "type": "urn:jd-spec:device:air-conditioner:0000012d:jd:m1:1"
   }
 }
