@@ -645,24 +645,6 @@
               "zh-CN": "延时关创建时间"
             },
             "type": "urn:jd-spec:property:delay-off-create-time:00000fc0:jd:mhbkwy0521013515cw:1"
-          },
-          {
-            "access": [
-              "read",
-              "notify"
-            ],
-            "iid": 64,
-            "format": "uint16",
-            "description": {
-              "en-US": "Exception",
-              "zh-CN": "异常"
-            },
-            "value-range": [
-              0,
-              65535,
-              1
-            ],
-            "type": "urn:jd-spec:property:exception:00001645:jd:mhbkwy0521013515cw:1"
           }
         ]
       }
