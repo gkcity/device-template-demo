@@ -1,0 +1,1 @@
+import"./chunk-EQDQRRRY.js";var e=[{path:"",pathMatch:"full",redirectTo:"/main/welcome"},{path:"welcome",data:{breadcrumb:"\u9996\u9875"},loadChildren:()=>import("./chunk-43GFVPDU.js").then(t=>t.WELCOME_ROUTES)},{path:"product",data:{breadcrumb:"\u4EA7\u54C1"},loadChildren:()=>import("./chunk-Q5KPHIYQ.js").then(t=>t.PRODUCT_ROUTES)}];export{e as MAIN_ROUTES};

@@ -1,0 +1,2 @@
+import{dc as n,la as r,lc as p}from"./chunk-SK3JYXRM.js";import"./chunk-EQDQRRRY.js";var e=class t{static \u0275fac=function(o){return new(o||t)};static \u0275cmp=r({type:t,selectors:[["app-error"]],standalone:!0,features:[p],decls:1,vars:0,template:function(o,s){o&1&&n(0,`\u8FD9\u662F\u4E00\u4E2A\u663E\u793A\u9519\u8BEF\u7684\u9875\u9762
+`)}})};var f=[{path:"",component:e}];export{f as ERROR_ROUTES};

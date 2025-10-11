@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "data": [
+    {
+      "name": "lightbulb",
+      "vendor": "jd",
+      "model": "lightbulb",
+      "version": 1,
+      "type": "urn:jd-spec:device:lightbulb:0000012d:jd:m1:1",
+      "id": "xxx"
+    }
+  ]
+}

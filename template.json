@@ -1,0 +1,560 @@
+{
+  "success": true,
+  "data": {
+    "description": {
+      "en-US": "device template",
+      "zh-CN": "产品模板"
+    },
+    "services": [
+      {
+        "iid": 1,
+        "description": {
+          "en-US": "Device Information",
+          "zh-CN": "设备信息"
+        },
+        "type": "urn:jd-spec:service:device-information:00000001:jd:m1:1",
+        "properties": [
+          {
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 1,
+            "format": "string",
+            "description": {
+              "en-US": "Firmware Revision",
+              "zh-CN": "固件版本"
+            },
+            "type": "urn:jd-spec:property:firmware-revision:00000006:jd:m1:1"
+          },
+          {
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 2,
+            "format": "string",
+            "description": {
+              "en-US": "Hardware Revision",
+              "zh-CN": "硬件版本"
+            },
+            "type": "urn:jd-spec:property:hardware-revision:00000fa2:jd:m1:1"
+          },
+          {
+            "access": [
+              "read"
+            ],
+            "iid": 3,
+            "format": "string",
+            "description": {
+              "en-US": "Serial Number",
+              "zh-CN": "序列号"
+            },
+            "type": "urn:jd-spec:property:serial-number:00000005:jd:m1:1"
+          },
+          {
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 4,
+            "format": "string",
+            "description": {
+              "en-US": "Manufacturer",
+              "zh-CN": "制造商"
+            },
+            "type": "urn:jd-spec:property:manufacturer:00000fa3:jd:m1:1"
+          }
+        ]
+      },
+      {
+        "iid": 2,
+        "description": {
+          "en-US": "Network Information",
+          "zh-CN": "网络信息"
+        },
+        "type": "urn:jd-spec:service:network-information:00000002:jd:m1:1",
+        "properties": [
+          {
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 1,
+            "format": "string",
+            "description": {
+              "en-US": "IPv4 Address",
+              "zh-TW": "",
+              "zh-CN": "IPv4地址"
+            },
+            "type": "urn:jd-spec:property:ip:00000086:jd:m1:1"
+          },
+          {
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 2,
+            "format": "string",
+            "description": {
+              "en-US": "IPv4 Subnet Mask",
+              "zh-CN": "IPv4子网掩码"
+            },
+            "type": "urn:jd-spec:property:ipv4-subnet-mask:00001db4:jd:m1:1"
+          },
+          {
+            "unit": "",
+            "access": [
+              "read"
+            ],
+            "iid": 3,
+            "format": "string",
+            "description": {
+              "en-US": "Mac Address",
+              "zh-TW": "",
+              "zh-CN": "Mac地址"
+            },
+            "type": "urn:jd-spec:property:mac-address:0000000e:jd:m1:1"
+          },
+          {
+            "unit": "",
+            "access": [
+              "read"
+            ],
+            "iid": 4,
+            "format": "int8",
+            "description": {
+              "en-US": "Received Signal Strength Indication",
+              "zh-CN": "信号强度"
+            },
+            "value-range": [
+              -128,
+              127,
+              1
+            ],
+            "type": "urn:jd-spec:property:rssi:000019c9:jd:m1:1"
+          }
+        ]
+      },
+      {
+        "iid": 3,
+        "description": {
+          "en-US": "Upgrade Service",
+          "zh-CN": "升级服务"
+        },
+        "type": "urn:jd-spec:service:upgrade:00000e75:jd:m1:1",
+        "actions": [
+          {
+            "iid": 1,
+            "in": [
+              {
+                "piid": 2,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 3,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 4,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 6,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 7,
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "description": {
+              "en-US": "Upgrade",
+              "zh-CN": "升级"
+            },
+            "type": "urn:jd-spec:action:upgrade:00000d49:jd:m1:1"
+          }
+        ],
+        "properties": [
+          {
+            "unit": "",
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 1,
+            "format": "uint8",
+            "description": {
+              "en-US": "progress",
+              "zh-CN": "进度"
+            },
+            "value-range": [
+              0,
+              100,
+              1
+            ],
+            "type": "urn:jd-spec:property:progress:00001c26:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 2,
+            "format": "string",
+            "description": {
+              "en-US": "md5",
+              "zh-CN": "md5"
+            },
+            "type": "urn:jd-spec:property:md5:00001c22:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 3,
+            "format": "string",
+            "description": {
+              "en-US": "Firmware Revision",
+              "zh-CN": "固件版本"
+            },
+            "type": "urn:jd-spec:property:firmware-revision:00000006:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 4,
+            "format": "string",
+            "description": {
+              "en-US": "Firmware URL",
+              "zh-CN": "固件地址"
+            },
+            "type": "urn:jd-spec:property:firmware-url:00001c24:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 5,
+            "format": "uint8",
+            "description": {
+              "en-US": "Error Code",
+              "zh-CN": "错误码"
+            },
+            "value-range": [
+              -10,
+              255,
+              1
+            ],
+            "type": "urn:jd-spec:property:error-code:000016aa:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 6,
+            "format": "string",
+            "description": {
+              "en-US": "firmware-name",
+              "zh-CN": "固件名称"
+            },
+            "type": "urn:jd-spec:property:firmware-name:00001c28:jd:m1:1"
+          },
+          {
+            "unit": "",
+            "access": [],
+            "iid": 7,
+            "format": "uint32",
+            "description": {
+              "en-US": "Firmware Size",
+              "zh-CN": "固件大小"
+            },
+            "value-range": [
+              1,
+              1000000000,
+              1
+            ],
+            "type": "urn:jd-spec:property:firmware-size:00001c29:jd:m1:1"
+          }
+        ],
+        "events": [
+          {
+            "iid": 1,
+            "description": {
+              "en-US": "Upgrade Succeeded",
+              "zh-CN": "升级成功"
+            },
+            "arguments": [
+              {
+                "piid": 3,
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "type": "urn:jd-spec:event:upgrade-succeeded:00000a29:jd:m1:1"
+          },
+          {
+            "iid": 2,
+            "description": {
+              "en-US": "Upgrade Failed",
+              "zh-CN": "升级失败"
+            },
+            "arguments": [
+              {
+                "piid": 5,
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "type": "urn:jd-spec:event:upgrade-failed:00000a2a:jd:m1:1"
+          }
+        ]
+      },
+      {
+        "iid": 4,
+        "description": {
+          "en-US": "Children Upgrade Service",
+          "zh-CN": "子设备升级服务"
+        },
+        "type": "urn:jd-spec:service:children-upgrade:00000e75:jd:m1:1",
+        "actions": [
+          {
+            "iid": 1,
+            "in": [
+              {
+                "piid": 2,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 3,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 4,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 6,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 7,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 8,
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "description": {
+              "en-US": "Upgrade Child Device",
+              "zh-CN": "升级子设备"
+            },
+            "type": "urn:jd-spec:action:upgrade-child-device:00000d49:jd:m1:1"
+          }
+        ],
+        "properties": [
+          {
+            "unit": "",
+            "access": [],
+            "iid": 1,
+            "format": "uint8",
+            "description": {
+              "en-US": "progress",
+              "zh-CN": "进度"
+            },
+            "value-range": [
+              0,
+              100,
+              1
+            ],
+            "type": "urn:jd-spec:property:progress:00001c26:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 2,
+            "format": "string",
+            "description": {
+              "en-US": "md5",
+              "zh-CN": "md5"
+            },
+            "type": "urn:jd-spec:property:md5:00001c22:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 3,
+            "format": "string",
+            "description": {
+              "en-US": "Firmware Revision",
+              "zh-CN": "固件版本"
+            },
+            "type": "urn:jd-spec:property:firmware-revision:00000006:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 4,
+            "format": "string",
+            "description": {
+              "en-US": "Firmware Url",
+              "zh-CN": "固件地址"
+            },
+            "type": "urn:jd-spec:property:firmware-url:00001c24:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 5,
+            "format": "uint8",
+            "description": {
+              "en-US": "Error Code",
+              "zh-CN": "错误码"
+            },
+            "value-range": [
+              -10,
+              255,
+              1
+            ],
+            "type": "urn:jd-spec:property:error-code:000016aa:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 6,
+            "format": "string",
+            "description": {
+              "en-US": "firmware-name",
+              "zh-CN": "固件名称"
+            },
+            "type": "urn:jd-spec:property:firmware-name:00001c28:jd:m1:1"
+          },
+          {
+            "unit": "",
+            "access": [],
+            "iid": 7,
+            "format": "uint32",
+            "description": {
+              "en-US": "Firmware Size",
+              "zh-CN": "固件大小"
+            },
+            "value-range": [
+              1,
+              1000000000,
+              1
+            ],
+            "type": "urn:jd-spec:property:firmware-size:00001c29:jd:m1:1"
+          },
+          {
+            "access": [],
+            "iid": 8,
+            "format": "string",
+            "description": {
+              "en-US": "Child deviceId",
+              "zh-CN": "子设备ID"
+            },
+            "type": "urn:jd-spec:property:did:00001195:jd:m1:1"
+          }
+        ],
+        "events": [
+          {
+            "iid": 1,
+            "description": {
+              "en-US": "Children Upgrade Succeeded",
+              "zh-CN": "子设备升级成功"
+            },
+            "arguments": [
+              {
+                "piid": 3,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 8,
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "type": "urn:jd-spec:event:children-upgrade-succeeded:00000a29:jd:m1:1"
+          },
+          {
+            "iid": 2,
+            "description": {
+              "en-US": "Children Upgrade Failed",
+              "zh-CN": "子设备升级失败"
+            },
+            "arguments": [
+              {
+                "piid": 5,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 8,
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "type": "urn:jd-spec:event:children-upgrade-failed:00000a2a:jd:m1:1"
+          },
+          {
+            "iid": 3,
+            "description": {
+              "en-US": "Children Upgrade Progress Changed",
+              "zh-CN": "子设备升级进度变化"
+            },
+            "arguments": [
+              {
+                "piid": 1,
+                "repeat": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "piid": 8,
+                "repeat": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "type": "urn:jd-spec:event:children-upgrade-progress-changed:00000a2b:jd:m1:1"
+          }
+        ]
+      }
+    ],
+    "type": "urn:jd-spec:device:lightbulb:0000012d:jd:m1:1"
+  }
+}
