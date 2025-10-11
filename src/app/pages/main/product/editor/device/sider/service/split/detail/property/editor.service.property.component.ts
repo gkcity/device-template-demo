@@ -281,7 +281,8 @@ export class EditorServicePropertyComponent implements OnInit, OnChanges {
   }
 
   addValueItem(value: ValueDefinition) {
-    this.list.push(this.createValueItem(value.value.rawValue(), value.description.get('zh-CN') || 'null'));
+    const v = value.description.get('zh-CN') || value.description.get('en-US') || '?';
+    this.list.push(this.createValueItem(value.value.rawValue(), v));
   }
 
   addDefaultValueItem() {
