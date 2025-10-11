@@ -28,17 +28,17 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --configuration=production --base-href="/device-template-demo/"
+        run: npm run build -- --configuration=production
 
       # 为 Angular 路由创建 404 回退
       - name: Create 404.html for client-side routing
-        run: cp dist/device-template-demo/browser/index.html dist/device-template-demo/browser/404.html
+        run: cp dist/browser/index.html dist/browser/404.html
 
       # 上传构建产物
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/device-template-demo/browser
+          path: dist/browser
 
   # 单独的部署任务（需要特殊权限）
   deploy:
