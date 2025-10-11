@@ -20,7 +20,7 @@ export class ProductService {
    */
   getProducts(): Observable<ProductInfo[]> {
     return this.http
-      .get<HomeResponse>(`/templates.json`)
+      .get<HomeResponse>(`${this.server}/templates.json`)
       .pipe(map(response => ProductInfoCodec.decodeArray(response.data)));
   }
 
@@ -32,7 +32,7 @@ export class ProductService {
       type: type
     }
     return this.http
-      .get<HomeResponse>(`/template.json`, {params})
+      .get<HomeResponse>(`${this.server}/template.json`, {params})
       .pipe(map(response => response.data));
   }
 }
