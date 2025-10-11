@@ -70,10 +70,61 @@
       {
         "iid": 2,
         "description": {
-          "en-US": "Network Information",
-          "zh-CN": "网络信息"
+          "en-US": "Ethernet Connectivity",
+          "zh-CN": "以太网络连接"
         },
-        "type": "urn:jd-spec:service:network-information:00000002:jd:m1:1",
+        "type": "urn:jd-spec:service:ethernet-connectivity:00000002:jd:m1:1",
+        "properties": [
+          {
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 1,
+            "format": "string",
+            "description": {
+              "en-US": "IPv4 Address",
+              "zh-TW": "",
+              "zh-CN": "IPv4地址"
+            },
+            "type": "urn:jd-spec:property:ip:00000086:jd:m1:1"
+          },
+          {
+            "access": [
+              "read",
+              "notify"
+            ],
+            "iid": 2,
+            "format": "string",
+            "description": {
+              "en-US": "IPv4 Subnet Mask",
+              "zh-CN": "IPv4子网掩码"
+            },
+            "type": "urn:jd-spec:property:ipv4-subnet-mask:00001db4:jd:m1:1"
+          },
+          {
+            "unit": "",
+            "access": [
+              "read"
+            ],
+            "iid": 3,
+            "format": "string",
+            "description": {
+              "en-US": "Mac Address",
+              "zh-TW": "",
+              "zh-CN": "Mac地址"
+            },
+            "type": "urn:jd-spec:property:mac-address:0000000e:jd:m1:1"
+          }
+        ]
+      },
+      {
+        "iid": 3,
+        "description": {
+          "en-US": "Wi-Fi Connectivity",
+          "zh-CN": "无线网络连接"
+        },
+        "type": "urn:jd-spec:service:wifi-connectivity:00000002:jd:m1:1",
         "properties": [
           {
             "access": [
@@ -137,7 +188,7 @@
         ]
       },
       {
-        "iid": 3,
+        "iid": 4,
         "description": {
           "en-US": "Upgrade Service",
           "zh-CN": "升级服务"
@@ -320,7 +371,7 @@
         ]
       },
       {
-        "iid": 4,
+        "iid": 7,
         "description": {
           "en-US": "Children Upgrade Service",
           "zh-CN": "子设备升级服务"
