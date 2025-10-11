@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  server: `http://${window.location.host}/device-template-demo`
+  server: `https://${window.location.host}/device-template-demo`
 }
