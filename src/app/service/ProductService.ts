@@ -32,7 +32,7 @@ export class ProductService {
       type: type
     }
     return this.http
-      .get<HomeResponse>(`${this.server}/template.json`, {params})
+      .get<HomeResponse>(`${this.server}/${type}.json`, {params})
       .pipe(map(response => response.data));
   }
 }

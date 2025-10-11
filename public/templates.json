@@ -7,7 +7,15 @@
       "model": "ac",
       "version": 1,
       "type": "urn:jd-spec:device:air-conditioner:0000012d:jd:m1:1",
-      "id": "xxx"
+      "id": "m1"
+    },
+    {
+      "name": "网关",
+      "vendor": "jd",
+      "model": "gateway",
+      "version": 1,
+      "type": "urn:jd-spec:device:gateway:0000012d:jd:m2:1",
+      "id": "m2"
     }
   ]
 }
