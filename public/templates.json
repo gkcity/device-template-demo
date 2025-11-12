@@ -16,6 +16,22 @@
       "version": 1,
       "type": "urn:jd-spec:device:gateway:0000012d:jd:m2:1",
       "id": "m2"
+    },
+    {
+      "name": "空调（定时器版本一）",
+      "vendor": "jd",
+      "model": "ac",
+      "version": 1,
+      "type": "urn:jd-spec:device:air-conditioner:0000012d:jd:t1:1",
+      "id": "t1"
+    },
+    {
+      "name": "空调（定时器版本二）",
+      "vendor": "jd",
+      "model": "ac",
+      "version": 1,
+      "type": "urn:jd-spec:device:air-conditioner:0000012d:jd:t2:1",
+      "id": "t2"
     }
   ]
 }
