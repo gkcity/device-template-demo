@@ -657,6 +657,7 @@
         "type": "urn:jd-spec:service:timer:000007d6:jd:t2:1",
         "properties": [
           {
+            "unit": "second",
             "access": [],
             "iid": 1,
             "format": "uint32",
@@ -685,6 +686,17 @@
               "zh-CN": "有效"
             },
             "type": "urn:jd-spec:property:validation:00000fc0:jd:t2:1"
+          },
+          {
+            "unit": "second",
+            "access": [],
+            "iid": 4,
+            "format": "uint32",
+            "description": {
+              "en-US": "countdown",
+              "zh-CN": "倒计时"
+            },
+            "type": "urn:jd-spec:property:countdown:00000fc0:jd:t2:1"
           },
           {
             "access": ["read", "write", "notify"],
@@ -1010,6 +1022,19 @@
               "zh-CN": "定时器24"
             },
             "type": "urn:jd-spec:property:timer1:00000fc0:jd:t2:1"
+          },
+          {
+            "access": ["read", "write", "notify"],
+            "iid": 100,
+            "format": "combination",
+            "members": [
+              1, 2, 3, 4
+            ],
+            "description": {
+              "en-US": "CountdownTimer",
+              "zh-CN": "倒计时器"
+            },
+            "type": "urn:jd-spec:property:countdown-timer:00000fc0:jd:t2:1"
           }
         ]
       }
