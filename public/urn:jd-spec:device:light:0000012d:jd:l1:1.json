@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "data": {
+    "description": {
+      "en-US": "灯 template",
+      "zh-CN": "灯模板（调试服务）"
+    },
+    "services": [
+      {
+        "iid": 136,
+        "description": {
+          "en-US": "Debug",
+          "zh-CN": "调试"
+        },
+        "type": "urn:jd-spec:service:debug:00000001:jd:m1:1",
+        "properties": [
+          {
+            "access": ["read", "write", "notify"],
+            "iid": 1,
+            "format": "bool",
+            "description": {
+              "en-US": "Debug Lock",
+              "zh-CN": "调试锁"
+            },
+            "type": "urn:jd-spec:property:lock:00000006:jd:m1:1"
+          }
+        ]
+      }
+    ],
+    "type": "urn:jd-spec:device:light:0000012d:jd:l1:1"
+  }
+}
